@@ -15,6 +15,10 @@
 - MBTI 测评站：亲手复刻的在线测评站 https://gxiekun.github.io/mbti-stage-test/
 - 茂远读书日记：视频号图书账号，用人物故事讲书
 
+## 文章
+
+- [我用 Gemini 深度调研做了个 Skill，给它一本书，它写一条 3 分半的带货脚本](https://kungeai.com/articles/gemini-deep-research-skill.html)（2026-11-26）：用 Gemini Deep Research 按架构、原理、迭代三层调研读书带货赛道，把报告打包成「读书故事脚本」Skill，当场写出曾国藩带货脚本；全程未写代码、未花 API 费用。
+
 ## 链接
 
 - 个人网站：https://kungeai.com

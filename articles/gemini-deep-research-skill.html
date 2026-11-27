@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我用 Gemini 深度调研做了个 Skill，给它一本书，它写一条 3 分半的带货脚本 · 爱折腾的昆哥</title>
+<meta name="description" content="没写一行代码，API 一分钱没花：用 Gemini 深度调研按架构、原理、迭代三层摸透读书带货赛道，打包成「读书故事脚本」Skill，当场写出第一条曾国藩带货脚本。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "我用 Gemini 深度调研做了个 Skill，给它一本书，它写一条 3 分半的带货脚本",
+  "author": {"@type": "Person", "name": "爱折腾的昆哥", "url": "https://kungeai.com/"},
+  "datePublished": "2026-11-26",
+  "mainEntityOfPage": "https://kungeai.com/articles/gemini-deep-research-skill.html"
+}
+</script>
+<style>
+  :root{--bg:#FAF7F0; --ink:#141310; --muted:#6E6A5E; --line:#E3DCCB; --gold:#C79A3B; --card:#FFFFFF}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.9}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0;border-bottom:1px solid var(--line)}
+  header a{color:var(--muted);text-decoration:none;font-size:14px}
+  header a:hover{color:var(--gold)}
+  article{padding:48px 0 64px}
+  h1{font-size:30px;line-height:1.45;font-weight:800;letter-spacing:.5px}
+  .meta{margin-top:14px;color:var(--muted);font-size:14px}
+  .body{margin-top:32px;font-size:17px;color:#2A2822}
+  .body p{margin:0 0 20px}
+  .body h3{font-size:19px;margin:34px 0 12px;color:var(--ink)}
+  .body ol{margin:0 0 20px 22px}
+  .body li{margin-bottom:8px}
+  .note{margin-top:40px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:10px;font-size:15px;color:var(--muted)}
+  .note a{color:var(--gold);text-decoration:none}
+  footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/">← 爱折腾的昆哥 · kungeai.com</a></div></header>
+<main class="wrap">
+<article>
+  <h1>我用 Gemini 深度调研做了个 Skill，给它一本书，它写一条 3 分半的带货脚本</h1>
+  <div class="meta">2026-11-26 · 首发于 X（@HbGeng）</div>
+  <div class="body">
+    <p>给它一本书，它还你一条 3 分半钟的口播脚本——带封面提示词，带金句收尾，连这一轮要测什么都给你写好了。</p>
+    <p>这个东西叫「读书故事脚本」，是我今天用 Gemini 的深度调研造出来的一个 Skill。全程没写一行代码，API 一分钱没花。</p>
+    <p>我做它是为了给自己的视频号读书号供稿。以前每条脚本都从零憋，现在把人物和书名给它，它按头部读书账号的爆款结构直接出稿。</p>
+    <p>先把账算清楚，这条链一共四步：</p>
+    <h3>第一步，调研。</h3>
+    <p>我没让它泛泛地「分析一下赛道」，而是给了三层要求：</p>
+    <p>架构层：头部账号具体怎么做——逐条拆爆款的开头原话、段落占比、第一个反转在哪、结尾金句原话，最后沉淀成钩子库、结构模板、标题公式；</p>
+    <p>原理层：为什么有效——封面什么样能让人点、内容靠什么留住人、观众为什么愿意转发，要心理学和视觉的依据，不要经验之谈；</p>
+    <p>迭代层：我们能在哪超过他们——每条改法写清依据什么原理、对标现在怎么做、我们改成什么、发出去看什么数据验。</p>
+    <p>跑出来的报告两万一千多字。</p>
+    <h3>第二步，中间拐了个弯。</h3>
+    <p>本来我想装谷歌的 gemini-api-cli，把深度调研直接接进 Codex 里跑。工具装好了，5 分 11 秒，版本 0.5.0。结果一查：Deep Research 走 API 不在免费档，要给项目绑卡，Pro 订阅也不包 API。</p>
+    <p>我没充。调研改用订阅里自带的 Deep Research，报告照样跑出来。目标没变，路换了一条，省下一笔。</p>
+    <h3>第三步，把报告变成工具。</h3>
+    <p>报告存成文件，扔给 Codex：按报告里的钩子库、结构模板、选事清单，打包成一个能反复用的 Skill。大约 11 分钟，建好，通过校验。</p>
+    <h3>第四步，当场出成品验货。</h3>
+    <p>用这个 Skill 写第一条：曾国藩，《曾国藩家书》。大约 8 分钟，正文 938 字，口播 3 分半。</p>
+    <p>它没讲曾国藩的一生，只讲了靖港兵败这一个转折。结尾金句是它写的：「败仗不是判词，别用一时输赢定自己一生。」</p>
+    <p>这条链里最值钱的，其实是调研把我自己定的规格推翻了。</p>
+    <p>我原来定的是 800 到 1100 字讲完一个人物。调研扒到的数据是：赵健 579 条视频写了 213 万字稿，平均一条 3679 字——人家根本不是在讲「一生摘要」。回来我们就把规格改了：只切一个命运转折点，配两三个高细节场景，字数反而收回到 850 到 1050。</p>
+    <p>还有一条：封面大字不能贴着图的最下面放，会被视频号底部的界面压住。这些不调研，靠拍脑袋永远想不到。</p>
+    <p>原理层还挖到一个对我这种 AI 制作的号特别有利的研究：PNAS 上的一项实验里，AI 合成人脸的可信度评分比真人脸高 7.7%。真人号拼不过的东西，我们这边是现成的。</p>
+    <p>这条链谁都能抄，顺序别错：</p>
+    <ol>
+      <li>选一个赛道，用深度调研按「架构、原理、迭代」三层摸透，别只拿一份报告；</li>
+      <li>报告别存着吃灰，打包成一个能反复出活的 Skill；</li>
+      <li>用 Skill 当场做出一个成品，验完货再说下一步。</li>
+    </ol>
+    <p>调研本身不是成品。把调研变成能出成品的工具，才是。</p>
+    <p>换个赛道照样成立：探店、选品、做课，先摸清头部怎么打，再把打法做成工具，量产的是内容，沉淀的是资产。这种赛道调研以前是调研机构按份收费的活，现在一个订阅就跑得动，缺的只是把它接进生产链的这一步。</p>
+    <p>这条脚本接下来会做成视频发出去，数据回来我再对账。</p>
+  </div>
+  <div class="note">成品视频（曾国藩·靖港兵败）和讨论都在 X 原帖里：<a href="https://x.com/HbGeng" target="_blank" rel="noopener">x.com/HbGeng</a>。这个 Skill 的下一篇续作：给它一本书，它直接还我一条成品视频。</div>
+</article>
+</main>
+<footer><div class="wrap">© 2026 爱折腾的昆哥 · kungeai.com · 只发自己真跑过的东西。</div></footer>
+</body>
+</html>
