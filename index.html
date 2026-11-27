@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>爱折腾的昆哥 · kungeai.com</title>
+<meta name="description" content="爱折腾的昆哥：AI 工具实测与开发、本地化部署、n8n 自动化、商家定制系统。只发自己真跑过的东西。">
+<style>
+  :root{
+    --bg:#FAF7F0; --ink:#141310; --muted:#6E6A5E; --line:#E3DCCB;
+    --gold:#C79A3B; --card:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+    line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  header{border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:17px;letter-spacing:.02em}
+  .brand img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+  .brand small{display:block;font-weight:400;font-size:12px;color:var(--muted);letter-spacing:.08em}
+  .nav-links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+  .nav-links a:hover{color:var(--ink)}
+
+  .hero{padding:84px 0 64px}
+  .hero .kicker{font-size:13px;letter-spacing:.35em;color:var(--gold);font-weight:700;margin-bottom:22px}
+  .hero h1{font-size:52px;line-height:1.25;font-weight:900;letter-spacing:.01em}
+  .hero h1 .thin{display:block;font-size:22px;font-weight:400;color:var(--muted);margin-top:26px;line-height:1.8;letter-spacing:0}
+  .hero .cta{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 26px;border-radius:999px;font-size:15px;font-weight:700;border:1.5px solid var(--ink)}
+  .btn.solid{background:var(--ink);color:var(--bg)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn:hover{opacity:.85}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:34px}
+  .sec-head .no{font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.2em}
+  .sec-head h2{font-size:28px;font-weight:900}
+  .sec-head p{color:var(--muted);font-size:14px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px}
+  .card h3{font-size:18px;font-weight:800;margin-bottom:8px}
+  .card h3 span{color:var(--gold);margin-right:8px}
+  .card p{font-size:14.5px;color:#45423A}
+
+  .doing{display:flex;flex-direction:column}
+  .doing a.row{display:flex;justify-content:space-between;align-items:center;gap:20px;
+    padding:22px 4px;border-bottom:1px solid var(--line)}
+  .doing a.row:last-child{border-bottom:none}
+  .doing a.row:hover .t{color:var(--gold)}
+  .doing .t{font-size:18px;font-weight:800;transition:color .15s}
+  .doing .d{font-size:14px;color:var(--muted);margin-top:2px}
+  .doing .arrow{font-size:20px;color:var(--muted);flex:none}
+
+  .platforms{display:flex;gap:14px;flex-wrap:wrap}
+  .plat{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:22px;text-align:left}
+  .plat .name{font-size:17px;font-weight:800}
+  .plat .handle{font-size:13.5px;color:var(--muted);margin-top:2px}
+  .plat:hover{border-color:var(--gold)}
+
+  footer{border-top:1px solid var(--line);padding:34px 0 46px;color:var(--muted);font-size:13.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  @media (max-width:640px){
+    .hero{padding:56px 0 44px}
+    .hero h1{font-size:36px}
+    .hero h1 .thin{font-size:18px}
+    .grid{grid-template-columns:1fr}
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <img src="avatar.jpg" alt="昆哥头像">
+      <span>爱折腾的昆哥<small>KUNGEAI.COM</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#do">能做什么</a>
+      <a href="#doing">在做的事</a>
+      <a href="#platforms">平台</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div class="kicker">AI 实测 · 开发 · 落地</div>
+    <h1>折腾前沿 AI，<br>落地真实生意。
+      <span class="thin">我是昆哥。给商家做系统是我的老本行，做 AI 内容我是新手——
+      新工具、新玩法先在我这儿跑一遍，跑通了、出成品了，才写出来。</span>
+    </h1>
+    <div class="cta">
+      <a class="btn solid" href="https://x.com/HbGeng" target="_blank" rel="noopener">在 X 上看我的实测</a>
+      <a class="btn ghost" href="https://github.com/gxiekun" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <section id="do">
+    <div class="sec-head"><span class="no">01</span><h2>能做什么</h2><p>不卖概念，只交能用的东西</p></div>
+    <div class="grid">
+      <div class="card">
+        <h3><span>—</span>AI 工具实测</h3>
+        <p>新工具先装、先跑、先出成品：一个 Skill 能干什么、一个开源项目值不值得用，测完给你看结果和步骤，不转发二手结论。</p>
+      </div>
+      <div class="card">
+        <h3><span>—</span>本地化部署</h3>
+        <p>把开源项目和 AI 能力部署到自己的机器上跑，数据不出门。装不上、跑不通的坑，我先替你踩一遍。</p>
+      </div>
+      <div class="card">
+        <h3><span>—</span>n8n 自动化</h3>
+        <p>把重复的运营动作连成自动流程：抓取、筛选、汇总、提醒，机器干杂活，人只做最后的判断和点击。</p>
+      </div>
+      <div class="card">
+        <h3><span>—</span>商家定制系统</h3>
+        <p>给小商家做能落地的业务系统：库存、订单、客户、内容生产，按你真实的生意流程来，不套模板。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="doing">
+    <div class="sec-head"><span class="no">02</span><h2>在做的事</h2><p>都在进行中，过程公开记录</p></div>
+    <div class="doing">
+      <a class="row" href="https://x.com/HbGeng" target="_blank" rel="noopener">
+        <span><span class="t">X 创作者重启</span>
+        <span class="d" style="display:block">一个 2015 年的老号从零重启：记录学 AI、做工具、冲创作者变现的全过程。</span></span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="row" href="https://gxiekun.github.io/mbti-stage-test/" target="_blank" rel="noopener">
+        <span><span class="t">复刻了一个卖爆的测评站</span>
+        <span class="d" style="display:block">花 1.98 元买下小红书卖了 6.6 万份的 MBTI 报告，拆完自己复刻了一个同款测评站，点开就能玩。</span></span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="row" href="https://x.com/HbGeng" target="_blank" rel="noopener">
+        <span><span class="t">茂远读书日记</span>
+        <span class="d" style="display:block">视频号图书带货号：用 AI 全流程生产人物故事视频，讲书里的人，卖书里的智慧。</span></span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="platforms">
+    <div class="sec-head"><span class="no">03</span><h2>平台</h2><p>内容首发在 X，其他平台同步折腾</p></div>
+    <div class="platforms">
+      <a class="plat" href="https://x.com/HbGeng" target="_blank" rel="noopener">
+        <div class="name">X（主阵地）</div><div class="handle">@HbGeng · 爱折腾的昆哥</div>
+      </a>
+      <a class="plat" href="https://github.com/gxiekun" target="_blank" rel="noopener">
+        <div class="name">GitHub</div><div class="handle">@gxiekun · 代码和成品</div>
+      </a>
+      <a class="plat" href="https://www.instagram.com/xiekungeng" target="_blank" rel="noopener">
+        <div class="name">Instagram</div><div class="handle">@xiekungeng</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head"><span class="no">04</span><h2>联系</h2></div>
+    <p style="font-size:16px;color:#45423A">商务合作、系统定制、工具部署，先在 X 上私信我，说清你的需求和现状，我看到会回。</p>
+    <div class="cta" style="display:flex;gap:14px;margin-top:24px">
+      <a class="btn solid" href="https://x.com/HbGeng" target="_blank" rel="noopener">去 X 私信</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 爱折腾的昆哥 · kungeai.com</span>
+    <span>只发自己真跑过的东西。</span>
+  </div>
+</footer>
+
+</body>
+</html>
