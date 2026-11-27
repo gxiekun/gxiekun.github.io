@@ -1,0 +1,27 @@
+# 爱折腾的昆哥（kungeai.com）
+
+> 爱折腾的昆哥：开发和系统落地是老本行（本地化部署、n8n 自动化、商家定制系统），现在用 AI 做内容、做创作者。只发自己真跑过的东西。
+
+## 能做什么
+
+- AI 工具实测与开发：把 AI 工具和开源项目真跑一遍，给出能落地的结论
+- 本地化部署：把 AI 工具、自动化流程部署到自己的电脑和服务器上，数据不出本地
+- n8n 自动化：用 n8n 串联业务流程，减少重复人工
+- 商家定制系统：给商家做定制化业务系统，把 AI 接进真实生意
+
+## 在做的事
+
+- X 账号重启：@HbGeng「爱折腾的昆哥」，记录从零开通创作者的过程
+- MBTI 测评站：亲手复刻的在线测评站 https://gxiekun.github.io/mbti-stage-test/
+- 茂远读书日记：视频号图书账号，用人物故事讲书
+
+## 链接
+
+- 个人网站：https://kungeai.com
+- X（Twitter）：https://x.com/HbGeng
+- GitHub：https://github.com/gxiekun
+- Instagram：https://www.instagram.com/xiekungeng
+
+## 联系
+
+通过 X 私信联系：https://x.com/HbGeng
